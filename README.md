@@ -37,6 +37,11 @@ e acrescentar:
 
 Funciona com Wi-Fi dongle LevelOne WUA-0603, com chipset Ralink.
 
+Nota: se o seu endereço IP aparecer como 169.254.xxx.yyy é provável que
+o seu Raspberry Pi não tenha conseguido um IP do DHCP server, e o IPv4LL
+auto designou um IP nesse range. Veja https://apps.ubuntu.com/cat/applications/avahi-autoipd/
+
+
 Para acessar a GUI via X-Server:
 --------------------------------
 
