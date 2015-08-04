@@ -19,6 +19,18 @@ XKBOPTIONS="lv3:alt_switch,compose:rctrl"
 Para configurar o Wi-Fi:
 ------------------------
 
-Veja esse post: http://raspberrypihq.com/how-to-add-wifi-to-the-raspberry-pi/
+Dentre as diversas opções recomendadas, tais como:
+http://raspberrypihq.com/how-to-add-wifi-to-the-raspberry-pi/
+
+a que melhor funcionou foi:
+http://thepihut.com/blogs/raspberry-pi-tutorials/16018016-how-to-setup-wifi-on-the-raspberry-pi-raspbian
+
+que basicamente manda editar o arquivo /etc/wpa_supplicant/wpa_supplicant.conf
+e acrescentar:
+
+network={
+    ssid="ssid da rede wi-fi"
+    psk="senha do wi-fi"
+}
 
 Funciona com Wi-Fi dongle LevelOne WUA-0603, com chipset Ralink.
