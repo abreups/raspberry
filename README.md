@@ -56,3 +56,11 @@ Depois chame o X-server com:
 
 Você precisar ter um X-Server instalado no seu PC/Mac.
 
+Adicionando uma câmera:
+----------------------
+
+    sudo apt-get install motion
+
+Veja: http://pingbin.com/2012/12/raspberry-pi-web-cam-server-motion/
+
+
