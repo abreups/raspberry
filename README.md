@@ -34,3 +34,12 @@ network={
 }
 
 Funciona com Wi-Fi dongle LevelOne WUA-0603, com chipset Ralink.
+
+Para acessar a GUI via X-Server:
+--------------------------------
+
+Para acessar o RPi usando ssh faça: ssh -X 192.168.0.xxx -l pi
+Depois chame o X-server com startlxde
+
+Você precisar ter um X-Server instalado no seu PC/Mac.
+
