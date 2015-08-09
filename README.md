@@ -64,3 +64,17 @@ Adicionando uma câmera:
 Veja: http://pingbin.com/2012/12/raspberry-pi-web-cam-server-motion/
 
 
+Compartilhar uma pasta:
+----------------------
+
+Para usar o Samba, veja este artigo:
+
+http://www.simonthepiman.com/how_to_setup_windows_file_server.php
+
+Para compartilhar a pasta onde as imagens do motion são salvas:
+
+    [motion]
+    comment = Pi camera
+    path = /tmp/motion
+    public = Yes
+    browseable = Yes
