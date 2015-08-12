@@ -120,3 +120,8 @@ b. http://raspi.tv/2012/how-to-mount-and-use-a-usb-hard-disk-with-the-raspberry-
 
 c. http://www.raspberrypi-spy.co.uk/2014/05/how-to-mount-a-usb-flash-disk-on-the-raspberry-pi/
 
+Time lapse camera (não testado):
+--------------------------------
+
+Veja: https://www.raspberrypi.org/learning/webcam-timelapse-setup/worksheet.md
+
