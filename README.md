@@ -90,22 +90,24 @@ Conectando um pen-drive:
 ------------------------
 
 Regra geral:
+
 1. Encaixe o pen-drive numa porta usb
+
 2. Veja em qual device ele foi alocado (provavelmente no sda1):
 
     sudo ls /dev/sd*
 
 3. Crie um local para "montar" o drive:
 
-    sudo mkdir /mnt/usb
+        sudo mkdir /mnt/usb
     
 4. "Monte" o drive:
 
-    sudo mount -t vfat /dev/sda1 /mnt/usb
+        sudo mount -t vfat /dev/sda1 /mnt/usb
     
 5. Veja o que tem no pen-drive:
 
-    ls /mnt/usb
+        ls /mnt/usb
     
 Algumas referências:
 
