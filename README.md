@@ -78,3 +78,12 @@ Para compartilhar a pasta onde as imagens do motion são salvas:
     path = /tmp/motion
     public = Yes
     browseable = Yes
+
+Byobu: sessão "permanente" de terminal
+-------------------------------------
+
+Veja: http://www.howtogeek.com/58487/how-to-easily-multitask-in-a-linux-terminal-with-byobu/
+
+    sudo apt-get install screen byobu
+
+
