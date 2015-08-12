@@ -1,4 +1,4 @@
-Instrucoes para configurar o Raspberry Pi:
+Instruções para configurar o Raspberry Pi:
 ==========================================
 
 Para configurar o teclado ABNT:
@@ -86,4 +86,32 @@ Veja: http://www.howtogeek.com/58487/how-to-easily-multitask-in-a-linux-terminal
 
     sudo apt-get install screen byobu
 
+Conectando um pen-drive:
+------------------------
+
+Regra geral:
+1. Encaixe o pen-drive numa porta usb
+2. Veja em qual device ele foi alocado (provavelmente no sda1):
+
+    sudo ls /dev/sd*
+
+3. Crie um local para "montar" o drive:
+
+    sudo mkdir /mnt/usb
+    
+4. "Monte" o drive:
+
+    sudo mount -t vfat /dev/sda1 /mnt/usb
+    
+5. Veja o que tem no pen-drive:
+
+    ls /mnt/usb
+    
+Algumas referências:
+
+a. http://www.makeuseof.com/tag/how-to-add-usb-storage-to-the-raspberry-pi/
+
+b. http://raspi.tv/2012/how-to-mount-and-use-a-usb-hard-disk-with-the-raspberry-pi
+
+c. http://www.raspberrypi-spy.co.uk/2014/05/how-to-mount-a-usb-flash-disk-on-the-raspberry-pi/
 
