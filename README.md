@@ -41,6 +41,9 @@ Nota: se o seu endereço IP aparecer como 169.254.xxx.yyy é provável que
 o seu Raspberry Pi não tenha conseguido um IP do DHCP server, e o IPv4LL
 auto designou um IP nesse range. Veja https://apps.ubuntu.com/cat/applications/avahi-autoipd/
 
+Para colocar um IP estático (fixo) veja:
+
+http://www.suntimebox.com/raspberry-pi-tutorial-course/week-3/day-5/
 
 Para acessar a GUI via X-Server:
 --------------------------------
