@@ -95,7 +95,7 @@ Regra geral:
 
 2. Veja em qual device ele foi alocado (provavelmente no sda1):
 
-    sudo ls /dev/sd*
+        sudo ls /dev/sd*
 
 3. Crie um local para "montar" o drive:
 
