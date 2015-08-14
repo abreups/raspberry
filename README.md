@@ -134,8 +134,21 @@ b. http://raspi.tv/2012/how-to-mount-and-use-a-usb-hard-disk-with-the-raspberry-
 
 c. http://www.raspberrypi-spy.co.uk/2014/05/how-to-mount-a-usb-flash-disk-on-the-raspberry-pi/
 
-Time lapse camera (não testado):
---------------------------------
+Time lapse camera:
+-----------------
 
 Veja: https://www.raspberrypi.org/learning/webcam-timelapse-setup/worksheet.md
+
+Para o nome dos arquivos eu usei o formato "ano mes dia hota minuto segundo", ou seja:
+
+    %Y%m%d%%H%M%S
+
+E para converter os arquivos de imagem em um vídeo use o ffmpeg:
+
+    ./ffmpeg -framerate 3 -pattern_type glob -i "2015*.jpg" -c:v libx264 -r 30 -pix_fmt yuv420p out.mp4
+    
+Os arquivos de imagem têm nomes segundo o padrão "2015*.jpg"
+
+Referência: http://superuser.com/questions/624567/ffmpeg-create-a-video-from-images
+
 
