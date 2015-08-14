@@ -16,6 +16,20 @@ editar o arquivo o /etc/default/keyboard para
     XKBVARIANT=""
     XKBOPTIONS="lv3:alt_switch,compose:rctrl"
 
+Para acertar o relógio:
+----------------------
+
+Veja a data e a hora com:
+
+    date
+    
+Se precisar de ajuste entre no raspi-config
+
+    sudo raspi-config
+    
+e vá na opção "4 Internationalisation Options". Siga os menus.
+
+O relógio do Raspberry Pi é sincronizado pelo serviço ntp.
 
 Para configurar o Wi-Fi:
 ------------------------
