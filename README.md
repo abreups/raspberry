@@ -80,6 +80,21 @@ Adicionando uma câmera:
 
 Veja: http://pingbin.com/2012/12/raspberry-pi-web-cam-server-motion/
 
+Para você usar o motion como time-lapse camera veja o parâmetro snapshot_interval:
+
+http://chris.gg/2012/07/using-a-ps3-eyetoy-with-the-raspberry-pi/4/
+
+e
+
+http://lavrsen.dk/foswiki/bin/view/Motion/FrequentlyAskedQuestions#How_do_I_disable_or_enable_saving_jpeg_files_when_motion_is_detected_63
+
+No meu caso fiz (/etc/motion/motion.conf):
+
+    snapshot_interval 60
+    output_normal off
+    ffmpeg_cap_new off
+    
+e aí fico só com os snapshots (sem filminho e sem detecção de movimento).
 
 Compartilhar uma pasta:
 ----------------------
@@ -88,7 +103,7 @@ Para usar o Samba, veja este artigo:
 
 http://www.simonthepiman.com/how_to_setup_windows_file_server.php
 
-Para compartilhar a pasta onde as imagens do motion são salvas:
+Para compartilhar a pasta onde as imagens do motion são salvas (/etc/samba/smb.conf):
 
     [motion]
     comment = Pi camera
@@ -134,7 +149,7 @@ b. http://raspi.tv/2012/how-to-mount-and-use-a-usb-hard-disk-with-the-raspberry-
 
 c. http://www.raspberrypi-spy.co.uk/2014/05/how-to-mount-a-usb-flash-disk-on-the-raspberry-pi/
 
-Time lapse camera:
+Time lapse camera (funcionou por um tempo mas depois preferi usar o próprio motion):
 -----------------
 
 Veja: https://www.raspberrypi.org/learning/webcam-timelapse-setup/worksheet.md
