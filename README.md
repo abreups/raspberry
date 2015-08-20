@@ -96,6 +96,14 @@ No meu caso fiz (/etc/motion/motion.conf):
     
 e aí fico só com os snapshots (sem filminho e sem detecção de movimento).
 
+Atenção: se você resolver mudar o diretório padrão onde as fotos são salvas
+(/tmp/motion), certifique-se de que o novo diretório dá direito de escrita 
+para o deamon do motion. Solução rápida e porca:
+
+    chmod a+w <diretório>
+    
+    
+
 Compartilhar uma pasta:
 ----------------------
 
