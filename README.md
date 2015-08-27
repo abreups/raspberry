@@ -59,6 +59,15 @@ Para colocar um IP estático (fixo) veja:
 
 http://www.suntimebox.com/raspberry-pi-tutorial-course/week-3/day-5/
 
+Para monitorar a intensidade do sinal Wi-Fi veja:
+
+http://www.cyberciti.biz/tips/linux-find-out-wireless-network-speed-signal-strength.html
+
+Dica: use o wavemon
+
+    wavemon
+    
+    
 Para acessar a GUI via X-Server:
 --------------------------------
 
