@@ -67,7 +67,12 @@ Dica: use o wavemon
 
     wavemon
     
-    
+Se o você quer usar o seu Raspberry Pi remotamente, para garantir que o Wi-Fi esteja sempre no
+ar, dê um reboot quando o Wi-Fi perder a conexão com essa dica: http://weworkweplay.com/play/rebooting-the-raspberry-pi-when-it-loses-wireless-connection-wifi/
+
+Uma explicação rápida de como funciona o crontab está aqui: http://www.devin.com.br/crontab/
+
+
 Para acessar a GUI via X-Server:
 --------------------------------
 
